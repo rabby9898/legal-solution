@@ -7,12 +7,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
     <title>Legal Solution</title>
     <style>
-        .fonts{
-            font-family: 'EB Garamond', serif;
+        .fonts-poppins{
             font-family: 'Poppins', sans-serif;
+        }
+        .fonts-garamond{
+            font-family: 'EB Garamond', serif;
         }
     </style>
     <script>
@@ -27,15 +29,59 @@
         }
       </script>
 </head>
-<body class="fonts">
-    <header>
-
+<body>
+    <header class="px-3 py-4 md:px-56 md:py-16">
+        <nav class="fonts-poppins">
+            <div class="navbar bg-base-100 items-center">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost mr-4 lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 fonts-poppins">
+                      <li><a class="text-base text-[#707070] font-normal">Home ></a></li>
+                      <li><a class="text-base text-[#707070] font-normal">Services ></a></li>
+                      <li><a class="text-base text-[#707070] font-normal">Cases ></a></li>
+                      <li><a class="text-base text-[#707070] font-normal">Blog ></a></li>
+                      <li><a class="text-base text-[#707070] font-normal">Contact Us ></a></li>
+                    </ul>
+                  </div>
+                  <img class="mb-0 md:mb-5 w-2/5" src="./images/logo2.png" alt="">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                      <li><a class="text-base text-[#707070] font-normal">Home ></a></li>
+                      <li><a class="text-base text-[#707070] font-normal">Services ></a></li>
+                      <li><a class="text-base text-[#707070] font-normal">Cases ></a></li>
+                      <li><a class="text-base text-[#707070] font-normal">Blog ></a></li>
+                      <li><a class="text-base text-[#707070] font-normal">Contact Us ></a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end fonts-poppins">
+                  <a class="btn bg-[#9D8E73] text-xs md:text-base font-normal text-[#fff] border-0 px-2 md:px-4 py-2 md:py-4 h-auto capitalize">Free Consultation</a>
+                </div>
+              </div>
+        </nav>
+        <!-- hero section -->
+        <section>
+            <div class="hero h-[80vh]" style="background-image: url(./images/banner.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-2xl">
+                    <h1 class="mb-5 text-5xl md:text-7xl font-extrabold text-white fonts-garamond">We Provide Effective Legal Solutions</h1>
+                    <p class="mb-5 text-base text-[#E7E7E7] fonts-poppins font-normal">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" />
+                    <button class="btn bg-[#9D8E73] text-base font-semibold text-[#fff] border-0 px-8 py-3 ml-3 h-auto capitalize">Search</button>
+                  </div>
+                </div>
+              </div>
+        </section>
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
